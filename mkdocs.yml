@@ -1,0 +1,8 @@
+site_name: moodle pdf crawler
+theme: readthedocs
+docs_dir: docs
+site_dir: docs/_site
+plugins:
+  - search
+  - git-revision-date-localized
+  - git-authors

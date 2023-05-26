@@ -1,0 +1,9 @@
+{
+    "pdfs": [
+        {
+            "name": "sample.pdf",
+            "url": "https://sample.moodle.pl/pluginfile.php/12345/mod_resource/content/sample.pdf",
+            "path": "docs/sample_folder"
+        }
+    ]
+}

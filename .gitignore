@@ -226,3 +226,6 @@ pdf/
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# my folders
+unknown/

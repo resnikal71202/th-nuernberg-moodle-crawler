@@ -18,6 +18,13 @@ requests = "^2.31.0"
 bs4 = "^0.0.1"
 argparse = "^1.4.0"
 pytest = "^7.3.1"
+pypdf2 = "^3.0.1"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.3"
+mkdocs-git-revision-date-localized-plugin = "^1.2.0"
+mkdocs-git-authors-plugin = "^0.7.1"
 
 [build-system]
 requires = ["poetry-core"]

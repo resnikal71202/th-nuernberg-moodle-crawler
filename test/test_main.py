@@ -103,14 +103,9 @@ class TestMain(unittest.TestCase):
         mock_instance.page_source = mock_page_source
 
         # Call the function under test
-        result = crawler.test_for_pdf(
-            "https://shortlink/to/a/small.pdf"
-        )
+        result = crawler.test_for_pdf("https://shortlink/to/a/small.pdf")
 
-        assert (
-            result
-            == "https://shortlink/to/a/small.pdf"
-        )
+        assert result == "https://shortlink/to/a/small.pdf"
 
     @patch("src.__main__.webdriver")
     def test_get_pdfs(self, mock_webdriver):
@@ -130,8 +125,8 @@ class TestMain(unittest.TestCase):
         mock_instance.page_source = mock_page_source
 
         mock_get_course = MagicMock(name="get_course")
-        mock_get_course.return_value = BeautifulSoup(mock_page_source,
-                                                     "html.parser")
+        mock_get_course.return_value = BeautifulSoup(
+            mock_page_source, "html.parser")
         crawler.get_course = mock_get_course
 
         mock_test_for_pdf = MagicMock(name="test_for_pdf")
@@ -141,9 +136,7 @@ class TestMain(unittest.TestCase):
         # Call the function under test
         result = crawler.get_pdfs()
 
-        assert result == [
-            "https://shortlink/to/a/small.pdf"
-        ]
+        assert result == ["https://shortlink/to/a/small.pdf"]
 
 
 if __name__ == "__main__":
