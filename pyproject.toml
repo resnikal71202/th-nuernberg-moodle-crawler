@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "moodle-pdf-crawler"
+name = "moodle_crawler"
 version = "0.1.0"
 description = ""
 authors = ["resnikal71202 <resnikal71202@users.noreply.github.com"]
 readme = "README.md"
-packages = [{include = "moodle_pdf_crawler"}]
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -18,7 +18,6 @@ requests = "^2.31.0"
 bs4 = "^0.0.1"
 argparse = "^1.4.0"
 pytest = "^7.3.1"
-pypdf2 = "^3.0.1"
 
 
 [tool.poetry.group.docs.dependencies]

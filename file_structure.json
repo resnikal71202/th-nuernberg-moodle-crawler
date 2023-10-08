@@ -1,0 +1,11 @@
+{
+    "format": "file sorter 0.1.0",
+    "files": [
+        {
+            "name": "audio.mp3",
+            "destination": "media",
+            "last_change": "",
+            "overwrite": false
+        }
+    ]
+}
