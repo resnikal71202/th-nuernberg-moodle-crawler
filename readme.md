@@ -34,5 +34,6 @@ The `file_structure.json` is used to declare where to copy files to
             "last_change": "",
             "overwrite": "true"
         }
+    ]
 }
 ```
