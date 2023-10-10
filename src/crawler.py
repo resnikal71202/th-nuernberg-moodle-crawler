@@ -81,7 +81,7 @@ class Crawler:
             if link.lower().startswith("https://"):
                 response = requests.head(
                     link,
-                    # allow_redirects=True,   # dispable beacause of security reasons
+                    allow_redirects=True,
                     cookies={cookie["name"]: cookie["value"] for cookie in cookies},
                 )
             else:
@@ -106,9 +106,7 @@ class Crawler:
 
             # Specify the local path to save the downloaded file
             local_path = os.path.join("downloads", filename)
-            # create downloads folder if not exists
-            if not os.path.exists("downloads"):
-                os.makedirs("downloads")
+
             # Write the file to disk
             with open(local_path, "wb") as f:
                 for chunk in response.iter_content(chunk_size=8192):
